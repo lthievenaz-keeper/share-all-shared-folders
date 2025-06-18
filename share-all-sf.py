@@ -13,5 +13,5 @@ list = api.search_shared_folders(my_params,'') # Can enter searchstring in '' to
 
 for shared_folder in list:
     for user in share_users:
-    cli.do_command(my_params, f"sf '{shared_folder.shared_folder_uid}' -e '{user}' -p on -o on")
-    # cli.do_command(my_params, f"sf '{shared_folder.shared_folder_uid}' -e '{user}' -a remove") # Unshare command
+        cli.do_command(my_params, f"sf '{shared_folder.shared_folder_uid}' -e '{user}' -p on -o on")
+        # cli.do_command(my_params, f"sf '{shared_folder.shared_folder_uid}' -e '{user}' -a remove") # Unshare command
